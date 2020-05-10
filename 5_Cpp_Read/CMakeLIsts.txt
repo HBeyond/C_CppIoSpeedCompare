@@ -1,0 +1,9 @@
+# first we add the executable that generates the table
+add_executable(5_Cpp_Read 5_Cpp_Read.cpp)
+
+# add the binary tree directory to the search path 
+# for include files
+include_directories(${DEPEND_INCLUDES})
+ 
+# add the main library
+target_link_libraries(5_Cpp_Read ${DEPEND_LIBS})
